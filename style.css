@@ -1,0 +1,34 @@
+
+
+h1 {
+  height: 100%;
+  font-family: 'Julius Sans One', sans-serif;
+  font-size: 40px;
+  color: #323b3b;
+}
+
+
+.title-bar {
+  text-align: center;
+  background-color: #75b5ec;
+}
+
+.info-bar {
+  font-size: 24px;
+  font-family: 'Jura', sans-serif;
+}
+
+.game-box {
+  font-family: 'Jura', sans-serif;
+  margin-top: 100px;
+}
+
+.game-box-title {
+  font-size: 32px;
+  text-align: center;
+}
+
+.current-word {
+  font-size: 32px;
+  text-align: center;
+}
