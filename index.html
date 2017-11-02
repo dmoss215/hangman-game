@@ -30,48 +30,60 @@
   </div> -->
 
     <div class="row title-bar">
-      <div class="col-md-12">
+
+      <div class="col-md-9">
         <div class="">
           <h1>Hangman Game</h1>
         </div>
       </div>
+
+      <div class="col-md-3">
+        <button class="btn btn-default start-button" onclick="newGame()" type="submit">New Game</button>
+      </div>
+
     </div>
 
 
     <div class="row">
-      <div class="col-md-4">
+      <div class="col-md-6">
         <div class="wins info-bar" id="wins">
           <p>Wins:</p>
         </div>
       </div>
-      <div class="col-md-4">
 
-      </div>
-      <div class="col-md-4">
+      <div class="col-md-6">
         <div class="games-remaining info-bar" id="games-remaining">
-          <p>Games Remaining:</p>
+          <p>Guesses:</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+
+      <div class="col-md-12">
+        <div class="game-box">
+          <div class="game-box-title">
+            <p>Tech Giant:</p>
+
+          </div>
+          <div class="current-word" id="randomShow">
+            <p> </p>
+          </div>
         </div>
       </div>
 
     </div>
 
     <div class="row">
-      <div class="col-md-12">
-        <div class="game-box">
-          <div class="game-box-title">
-            <p>Current Word:</p>
-
-          </div>
-          <div class="current-word">
-            <p>- - - - - </p>            
-          </div>
-        </div>
+      <div class="letters-guessed">
+        <p>letters guessed</p>
+        <p id="wrong-letters"></p>
       </div>
 
     </div>
 
     </div>
 
-
+  <script src="app.js" charset="utf-8"></script>
 </body>
 </html>

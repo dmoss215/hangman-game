@@ -9,6 +9,7 @@ h1 {
 
 
 .title-bar {
+  padding-left: 175px;
   text-align: center;
   background-color: #75b5ec;
 }
@@ -29,6 +30,26 @@ h1 {
 }
 
 .current-word {
-  font-size: 32px;
+  font-size: 38px;
   text-align: center;
+  margin-bottom: 75px;
+  margin-top: 50px;
+}
+
+.games-remaining {
+  text-align: right;
+}
+
+.start-button {
+  font-family: 'Jura', sans-serif;
+  font-weight: bold;
+  margin-top: 20px;
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.letters-guessed {
+  font-family: 'Jura', sans-serif;
+  text-align: center;
+  font-size: 28px;
 }
