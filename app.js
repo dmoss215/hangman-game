@@ -1,6 +1,4 @@
 
-function newGame(){
-
 var techCo = ["amazon", "google", "microsoft", "twitter", "facebook", "instagram", "veeam", "cisco", "intel", "apple"]
 //Choose random string from tvShows array
 var randNum = Math.floor(Math.random() * techCo.length);
@@ -31,6 +29,7 @@ console.log(underscores.join(' '));
   document.getElementById('games-remaining').innerHTML = "<p>Guesses:</p>" + guessesRemaining;
 
   //Get the key pressed by the user
+
   document.onkeyup = function(event) {
     var letterPressed = event.key;
 
@@ -38,7 +37,7 @@ console.log(underscores.join(' '));
 
     //if the letter pressed matches a letter in lettersInCompany, replace the letter in underscores
 
-    if (lettersInCompany.indexOf(letterPressed) > -1 ) {
+    if (lettersInCompany.indexOf(letterPressed) > -1) {
       for (var i = 0; i < underscores.length; i++) {
         if (lettersInCompany[i] == letterPressed) {
           underscores[i] = letterPressed;
@@ -46,16 +45,20 @@ console.log(underscores.join(' '));
         }
       }
     } else {
-      guessesRemaining--;
-      wrongGuess.push(letterPressed);
-      document.getElementById('games-remaining').innerHTML = "<p>Guesses:</p>" + guessesRemaining;
-      document.getElementById('wrong-letters').innerHTML = wrongGuess
-    }
+        guessesRemaining--;
+        wrongGuess.push(letterPressed);
+        document.getElementById('games-remaining').innerHTML = "<p>Guesses:</p>" + guessesRemaining;
+        document.getElementById('wrong-letters').innerHTML = wrongGuess
+      };
+
 
     if (guessesRemaining == 0) {
       document.getElementById('randomShow').innerHTML = "YOU LOSE!"
+    };
+
+
+    if (document.getElementById('randomShow').innerHTML == lettersInCompany) {
+      alert('match!');
     }
 
-  }
-
-}
+  };
