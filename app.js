@@ -8,6 +8,7 @@ function newGame() {
   var guessesRemaining;
   var wrongGuess = [];
   var wins = 0;
+  var losses = 0;
 
   console.log(randCo);
 
@@ -63,6 +64,8 @@ function newGame() {
 
 
     if (guessesRemaining == 0) {
+      losses++;
+      document.getElementById('losses-number').innerHTML = "<p>Losses:</p>" + losses;
       document.getElementById('randomShow').innerHTML = "YOU LOSE!"
     };
 
