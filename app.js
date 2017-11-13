@@ -1,3 +1,6 @@
+var wins = 0;
+var losses = 0;
+
 function newGame() {
   var techCo = ["amazon", "google", "microsoft", "twitter", "facebook", "instagram", "veeam", "cisco", "intel", "apple", "ubiquiti"]
   //Choose random string from tvShows array
@@ -7,8 +10,7 @@ function newGame() {
   var underscores = [];
   var guessesRemaining;
   var wrongGuess = [];
-  var wins = 0;
-  var losses = 0;
+
 
   console.log(randCo);
 
@@ -78,6 +80,7 @@ function newGame() {
       console.log(wins);
       document.getElementById('wins-number').innerHTML = "<p>Wins:</p>" + wins;
       document.getElementById('randomShow').innerHTML = "YOU WIN!";
+      console.log(wins);
     };
 
   };
